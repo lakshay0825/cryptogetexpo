@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRYPTO</title>
+
+    <!-- CSS files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Header Section -->
+    <header class="header-main">
+        <div class="header_top">
+            <div class="container-fluid py-2 d-flex justify-content-center">
+                <ul class="top-address">
+                    <li>
+                        <strong>Address</strong>
+                        <span>Dubai, Atlantis , The Palm</span>
+                    </li>
+                    <li>
+                        <strong>Date Time</strong>
+                        <span>14 July 2024 5:30PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex p-4 header-inner align-items-center justify-content-between">
+            <a href="#">
+                <img src="images/logo.svg" alt="Logo" title="" class="logo" />
+            </a>
+            <div class="right-btn">
+                <a href="#" class="button mx-4 my-2">
+                    Get Tickets
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center banner-txt">
+                    <h4>14 July 2024,  Dubai Atlantis The Palm</h4>
+                    <h1 class="text-light">CryptoGetExpo <br />Conference</h1>
+                    <div class="pt-5 mt-0">
+                        <a href="#" class="button mx-4 my-2">
+                            Get Tickets
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-txt">
+                        <h2>WHO WE ARE</h2>
+                        <p>CryptoGetExpo is a premier blockchain conference network that brings together influential figures and industry experts to reshape the future of finance. The upcoming edition of CryptoGetExpo is scheduled to take place in Dubai on July 15, 2024, featuring the participation of the world's leading crypto companies and blockchain entrepreneurs. As Dubai emerges as a global crypto hub, CryptoGetExpo serves as the gathering point for the worldwide community interested in blockchain and cryptocurrency, offering engaging discussions on cutting-edge financial technologies. Attendees can expect extensive networking opportunities and participation from over 30 countries, making it a truly global event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+
+
+    <!-- Carousel Script -->
+    <script>
+
+        $(function () {
+            //caches a jQuery object containing the header element
+            var header = $(".header-main");
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >=100) {
+                    header.addClass("darkHeader");
+                } else {
+                    header.removeClass("darkHeader");
+                }
+            });
+        });
+
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+        // Copy right script
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("year").innerHTML = n;
+
+    </script>
+</body>
+
+</html>
